@@ -1,0 +1,65 @@
+.body {
+    width: 100%;
+    padding: 0%;
+    margin: 0;
+}
+
+.recipe_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 23px;
+    grid-gap: 23px;
+    background: rgba(0, 0, 0, 0.67);
+    width: 75vw;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.grid_item {
+    background-color: rgba(255, 255, 255, 0.67);
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 32vh;
+    padding-bottom: 15px;
+    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.food_images {
+    width: 28vh;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.recipe_name {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.recipe_name:hover {
+    color: rbg(255, 116, 32);
+    transition: 200ms;
+}
+
+.details_modal {
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.67);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 5px 10px 15px;
+    margin: 0 auto;
+    margin-top: 23vh;
+    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.details_body {
+    display: flex;
+}
+
+.details_short,
+.details_long {
+    padding: 8px;
+}
