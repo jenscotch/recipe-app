@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
 .body {
     width: 100%;
     padding: 0%;
@@ -21,7 +25,6 @@
     border-radius: 7px;
     width: 32vh;
     padding-bottom: 15px;
-    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
     text-align: center;
 }
 
@@ -52,7 +55,6 @@
     box-shadow: 5px 10px 15px;
     margin: 0 auto;
     margin-top: 23vh;
-    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .details_body {
@@ -72,14 +74,12 @@
     box-shadow: 5px 10px 15px;
     margin: 10px auto;
     margin-top: 23vh;
-    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .login_btn,
 .logout_btn,
 .back_btn {
     width: 70px;
-    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 16px;
     background-color: rgb(255, 116, 32);
     border-radius: 5px;
@@ -98,6 +98,49 @@
 .back_btn:hover {
     filter: brightness(125%);
     transition: 200ms;
+}
+
+.form_search_input,
+.form_search {
+    background-color: beige;
+    height: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+}
+
+.form_data {
+    color: white;
+}
+
+.search_results {
+    background-color: rgb(232, 211, 187);
+    border-radius: 7px;
+    font-size: 10px;
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+    margin: 0 auto;
+}
+
+.form_input {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.nav-bar {
+    width: 80vw;
+    height: 10vh;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #error_login {

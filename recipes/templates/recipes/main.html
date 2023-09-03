@@ -14,9 +14,33 @@
         </style>
     </head>
     <body>
-        <div>
-            <a href="{% url 'logout' %}" class="logout_btn">Logout</a>
+        <div class="nav-bar">
+            <img id="logo" src="{% static 'recipes/images/logo.png' %}" height="50px" width="75px">
+            <div class="search_box">
+                <form action="" method="GET" class="form">
+                    {% csrf_token %}
+                    <input type="text" name="recipe_search" class="form_search_input" id="searchbar"
+                        placeholder="Search Recipes" onkeyup="search_recipe()"/>
+                </form>
+                <br/>
+                <div class="search_results" autocomplete="off" style="display: none;">
+                    {% for object in object_list %}
+                    <p class="recipe_searched">
+                        <a class="recipe_name"
+                            style="font-size: 18px;"
+                            href="{{object.get_absolute_url}}"> {{object.name}} </a>
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <a href="{%url 'recipes:search' %}" class="logout_btn">Display Recipe Data</a>
+            </div>
+            <div>
+                <a href="{% url 'logout' %}" class="logout_btn">Logout</a>
+            </div>
         </div>
+        
         <div class="recipe_grid">
             {% for object in object_list %}
             <div class="grid_item">
@@ -29,5 +53,6 @@
             </div>
             {% endfor %}
         </div>
+        <script src="{% static 'recipes/js/scripts.js' %}"></script>
     </body>
 </html>
