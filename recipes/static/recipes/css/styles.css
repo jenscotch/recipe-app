@@ -63,3 +63,47 @@
 .details_long {
     padding: 8px;
 }
+
+.auth_modal {
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.67);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 5px 10px 15px;
+    margin: 10px auto;
+    margin-top: 23vh;
+    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.login_btn,
+.logout_btn,
+.back_btn {
+    width: 70px;
+    font-family: 'Roboto Mono', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: rgb(255, 116, 32);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.back_btn {
+    background-color: rgb(123, 49, 33);
+}
+
+.login_btn:hover,
+.logout_btn:hover,
+.back_btn:hover {
+    filter: brightness(125%);
+    transition: 200ms;
+}
+
+#error_login {
+    margin: 0 auto;
+    border: 3px solid rgb(243, 0, 0);
+    background-color: rgb(255, 116, 32);
+    padding: 10px;
+    border-radius: 10px;
+}
