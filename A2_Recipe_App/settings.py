@@ -35,7 +35,7 @@ if IS_HEROKU:
     DEBUG = True
 
 if IS_HEROKU:
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['vast-brook-06028.herokuapp.com']
 else:
     ALLOWED_HOSTS = ['*']
 
