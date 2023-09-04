@@ -28,16 +28,9 @@ SECRET_KEY =  os.environ.get('DJANGO_SECRET_KEY','django-insecure-ml49cp(e)=yakp
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-if not IS_HEROKU:
-    DEBUG = True
+DEBUG = False
 
-if IS_HEROKU:
-    DEBUG = False
-
-if IS_HEROKU:
-    ALLOWED_HOSTS = ['vast-brook-06028-bc97c7966cad.herokuapp.com']
-else:
-    ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['vast-brook-06028-bc97c7966cad.herokuapp.com']
 
 
 # Application definition
@@ -131,8 +124,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'recipes/static']
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+    ]
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 STATIC_ROOT = BASE_DIR / "staticfiles"
